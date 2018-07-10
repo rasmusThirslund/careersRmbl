@@ -1,0 +1,10 @@
+$block: c-media;
+.c-media {
+
+  &__caption {
+    font-size: 0.9em;
+    line-height: 1.3;
+    color: $color-body-grey;
+    margin-top: $inuit-global-spacing-unit-tiny;
+  }
+}

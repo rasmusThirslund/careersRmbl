@@ -1,0 +1,28 @@
+/**
+
+Extensions for the inuit type layout system
+
+ */
+
+
+// a PADDED variation to put on the o-layout element (the container or "row")
+// => it puts a margin bottom on all direct cells
+// is useful for simplified markup in a grid section when all cells are stacked at a certain breakpoint
+// todo: for all breakpoints
+
+@mixin cell-padded($bp-name) {
+  @include mix-break($until: #{$bp-name}) {
+    > .o-layout__item {
+      margin-bottom: $inuit-global-spacing-unit;
+    }
+  }
+}
+
+//
+.o-layout--padded\@mobile {
+  @include mix-break(mobile, tablet) {
+    > .o-layout__item {
+      margin-bottom: $inuit-global-spacing-unit;
+    }
+  }
+}

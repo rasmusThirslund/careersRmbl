@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page components</title>
+    <!--<link type="text/css" rel="stylesheet" href="/styles/bundle.css">
+-->
+<link href="styles/bundle.css" rel="stylesheet"></head>
+<body>
+
+<!--
+    Rich text example, not really a componentclass but is composed of other objects
+-->
+<div class="o-section">
+    <div class="o-wrapper">
+            <div class="o-center-column">
+
+                <h2>Rich Text "comp"</h2>
+
+                <!-- %= require('html-loader!./partial.html') % -->
+
+                <div class="o-richtext">
+
+
+
+                    <h2>Heading 2</h2>
+                    <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+                    <h3>Heading 3</h3>
+                    <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<hr/>
+
+<!-- example of media component -->
+<div class="o-section">
+<div class="o-wrapper">
+    <div class="o-center-column">
+        <h2>Media component</h2>
+    </div>
+    <div class="o-layout">
+        <div class="o-layout__item u-2/3@desktop u-push-1/6@desktop">
+
+            <div class="o-ratio  o-ratio--16:9">
+                <div class="o-ratio__content">
+                <!--<img class="o-ratio__content" alt="Placeholder Image and Some Alt Text" src="https://placehold.it/750x350" title="A title element for this placeholder image."/>-->
+                <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/MNCzSfv4hX8?rel=0&amp;showinfo=0&amp;start=30" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" kwframeid="1"></iframe>-->
+                <video loop="" muted="" playsinline="" autoplay="" src="/public/video/Blurred Crowd of People Walking.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div>
+
+
+    </div></div>
+</div>
+<hr>
+
+
+<script src="/bundle.js"></script>
+
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>

@@ -1,0 +1,35 @@
+/**
+extension, we need a packed version
+ */
+
+.o-media--stack {
+
+  > .o-media__img {
+    float: none;
+    img {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+
+}
+
+/**
+  extension, make elements stack on small device as default
+  todo: consider use of this? maybe remove as default
+ */
+.o-media {
+  > .o-media__img {
+    @include mix-break($until: tablet) {
+      float: none;
+      &,
+      img {
+        width: 100%;
+      }
+    }
+    //@include mq($until: tablet) {
+    //    float: none;
+    //    &, img {width: 100%;}
+    //}
+  }
+}

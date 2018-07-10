@@ -1,0 +1,17 @@
+
+// todo refactor name!
+@mixin mix-last-child-no-bottom-margin($isImportant: "") {
+  > *:last-child {
+    margin-bottom: 0 #{$isImportant};
+  }
+}
+
+/**
+  A BLOCK CENTERED
+  assumes that element is display: block, and has some width defined
+*/
+@mixin mix-center-block($important: '') {
+  margin-left: auto #{$important};
+  margin-right: auto #{$important};
+}
+

@@ -1,0 +1,70 @@
+$splitPadding: $inuit-global-spacing-unit / 2;
+@mixin leftElement(){
+  order: 1;
+  padding-left: 0;
+  padding-right: $splitPadding;
+}
+@mixin rightElement(){
+  order: 2;
+  padding-left: $splitPadding;
+  padding-right: 0;
+}
+
+
+.c-media-text {
+  display: flex;
+  flex-direction: column;
+
+  @include mix-break(tablet) {
+    flex-direction: row;
+  }
+}
+
+.c-media-text__media,
+.c-media-text__content {
+  width: 100%;
+
+  @include mix-break(tablet) {
+    width: 50%;
+  }
+}
+
+.c-media-text__media {
+  order: 1;
+  margin-bottom: $inuit-global-spacing-unit;
+
+  @include mix-break(tablet) {
+    @include leftElement;
+    margin-bottom: 0;
+  }
+}
+
+.c-media-text__content {
+
+  order: 2;
+
+  @include mix-break(tablet) {
+    @include rightElement;
+  }
+}
+
+/**
+  MODIFIERS
+*/
+
+// REVERSE
+// applies only on horizontal display (tablet +)
+
+.c-media-text--reverse {
+
+  @include mix-break(tablet) {
+
+    .c-media-text__media {
+      @include rightElement;
+    }
+    .c-media-text__content {
+      @include leftElement;
+    }
+  }
+
+}

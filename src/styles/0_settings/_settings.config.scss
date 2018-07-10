@@ -1,0 +1,38 @@
+///* ========================================================================
+//   #CONFIG
+//   ======================================================================== */
+
+// A map of global config 0_settings. Define any project-level configuration,
+// feature switches, etc. in here.
+
+$inuit-config: (
+  env: dev,
+  healthcheck: false,
+  debug: true,
+);
+
+// You can access data in this map using the following function:
+//
+// inuit-config(<key>)
+//
+// Example usage:
+//
+// @if (inuit-config(debug) == true) { ...  }
+
+@function inuit-config($key) {
+  @return map-get($inuit-config, $key);
+}
+
+// base font sizes
+$base-font-size: 16px;
+$base-line-height-unitless: 1.5;
+$base-line-height-px: $base-font-size * $base-line-height-unitless;
+
+
+// wrapper max width (overriding)
+$inuit-wrapper-width: 1400px;
+
+// max width of content paragraphs and centered columns
+$paragraph-max-width: 40rem;
+
+

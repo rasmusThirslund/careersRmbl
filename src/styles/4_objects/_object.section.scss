@@ -1,0 +1,53 @@
+/**
+
+  Sections are used for separating content-areas/blocks down a page
+  MIXIN CAN BE USED ALSO INSIDE COMPONENTS.
+
+  a section has 100% width allowing wall to wall background colors/images or video
+  the wrapper sets the content width
+  the box is optional (applies padding)
+
+  a typical html structure would thus be:
+
+  <div class="o-section">
+        <div class="o-wrapper">
+          <div class="o-box">
+            Lorem ipsum dolor sit amet
+          </div>
+        </div>
+    </div>
+
+ */
+
+
+.o-section {
+
+  @include mix-section-gap();
+
+}
+
+// size variants
+// tiny and small are omitted (will probably never be used)
+// sizes deviates from the normal inuit css scaling factors
+//
+/////////////////
+
+.o-section--flush {
+
+  @include mix-section-gap(flush)
+
+}
+
+.o-section--large {
+
+  @include mix-section-gap(large)
+
+}
+
+.o-section--huge {
+
+  @include mix-section-gap(huge)
+
+}
+
+

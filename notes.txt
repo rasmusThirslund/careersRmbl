@@ -1,0 +1,81 @@
+The foundation of this build setup is a copy of: 
+
+https://github.com/wbkd/webpack-starter
+
+
+## notes:
+
+enable hot module replacement HMR by adding "--hot" to the script in package.json
+The bug here is when HMR is enabled there is currently no reload when HTML file Changes
+sp HMR only works with js and scss
+
+## Changes to core by Implicit: 
+css #project
+css opinionated elements and generics
+
+
+## issues
+dist folder not reset (build does it)
+bundle js hashed => will be an issue in CMS based project
+how to implement something like file include ?
+
+## roadmap
+collapsable sections w header on styleguide page
+link to github single files for doc
+sectioned styleguide for paddings/margins
+description to styleguide
+code toggler for styleguide
+css autoprefixer
+
+css
+heading objects
+lead objects
+
+css buttons:
+soft
+hard
+full
+half
+
+objects to kit?:
+pill
+lozenges (loz)
+block list?
+
+////////////////////////////
+breakpoint:
+
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px
+) !default;
+
+
+@example scss
+///  .element {
+///    @include mq($from: mobile) {
+///      color: red;
+///    }
+///    @include mq($until: tablet) {
+///      color: blue;
+///    }
+///    @include mq(mobile, tablet) {
+///      color: green;
+///    }
+///    @include mq($from: tablet, $and: '(orientation: landscape)') {
+///      color: teal;
+///    }
+///    @include mq(950px) {
+///      color: hotpink;
+///    }
+///    @include mq(tablet, $media-type: screen) {
+///      color: hotpink;
+///    }
+///    // Advanced use:
+///    $my-breakpoints: (L: 900px, XL: 1200px);
+///    @include mq(L, $breakpoints: $my-breakpoints, $static-breakpoint: L) {
+///      color: hotpink;
+///    }
+///  }
