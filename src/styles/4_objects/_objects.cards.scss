@@ -1,0 +1,5 @@
+.o-card {}
+.o-card__body {
+  @include mix-last-child-no-bottom-margin();
+  padding: $spacing-unit;
+}

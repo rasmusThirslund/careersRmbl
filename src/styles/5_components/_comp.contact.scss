@@ -1,0 +1,24 @@
+.c-contact {
+  width: 100%;
+
+}
+
+.c-contact__img {
+  max-width: 200px;
+}
+
+.c-contact__details {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  @include  mix-remove-margin-children(true);
+
+  small {
+    color: $color-body-grey;
+    @include mix-font-size(11px);
+  }
+}
+
+.c-contact__img--small {
+  max-width: $spacing-unit;// 100px;
+}
+

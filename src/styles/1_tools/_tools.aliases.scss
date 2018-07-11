@@ -2,16 +2,16 @@
 
 // Reassign `$inuit-global-spacing-unit` to `$unit`.
 //$unit: $inuit-global-spacing-unit;
-$pacing-unit: $inuit-global-spacing-unit;
-$pacing-unit-tiny: $inuit-global-spacing-unit-tiny;
-$pacing-unit-small: $inuit-global-spacing-unit-small;
-$pacing-unit-large: $inuit-global-spacing-unit-large;
-$pacing-unit-huge: $inuit-global-spacing-unit-huge;
+$spacing-unit: $inuit-global-spacing-unit;
+$spacing-unit-tiny: $inuit-global-spacing-unit-tiny;
+$spacing-unit-small: $inuit-global-spacing-unit-small;
+$spacing-unit-large: $inuit-global-spacing-unit-large;
+$spacing-unit-huge: $inuit-global-spacing-unit-huge;
 
-// Reassign lengthy font-size mixin to `font-size()`.
-//@mixin font-size($args...) {
-//  @include inuit-font-size($args...);
-//}
+// Reassign lengthy mix-font-size mixin to `mix-font-size()`.
+@mixin mix-font-size($args...) {
+  @include inuit-font-size($args...);
+}
 
 /**
   Renaming breakpoint mixin to follow naming convention: mixins prefixed w mix-

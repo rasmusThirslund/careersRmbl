@@ -1,7 +1,7 @@
 
 .o-richtext {
 
-  // restrain copy text to max width - for better readability
+  // restrain copy text to max width - for better readability.
   // change this according to project specifics
   max-width: $paragraph-max-width;
 
@@ -12,6 +12,14 @@
     h1, h2, h3, h4, h5, h6 {
       margin-top: 1em;
     }
+  }
+
+  /**
+    setting headers margin bottom to a relative unit of their font sizes, tying header and paragraph
+    closer together by overriding margins on generic heading
+  */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .7em;
   }
 
   // removing the bottom margin on any last element in rich text.

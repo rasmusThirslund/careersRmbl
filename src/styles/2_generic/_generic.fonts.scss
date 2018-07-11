@@ -68,6 +68,9 @@ $font-open: "Open Sans", sans-serif;
 
 
 html {
-  //font-family: $font-family-project;
-  font-family: $font-open;
+  font-family: $font-family-project;
+  //font-family: $font-open;
+  color: $color-body;
 }
+
+// todo apply body color to form fields ?

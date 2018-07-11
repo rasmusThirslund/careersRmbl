@@ -15,3 +15,26 @@
   margin-right: auto #{$important};
 }
 
+
+/**
+  remove margins on children (direct) inside element/container
+
+  defaults to select P tags.
+  To override this and use a * star selector, use mixin with
+  an argument, eg, true, or '*' (which compiles to true)
+
+*/
+
+@mixin mix-remove-margin-children($all: false) {
+
+  $selector: 'p';
+
+  @if $all {
+    $selector: '*';
+  }
+
+  // remove margin ;
+  > #{$selector} {
+    margin: 0;
+  }
+}

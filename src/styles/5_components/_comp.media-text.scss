@@ -1,4 +1,4 @@
-$splitPadding: $inuit-global-spacing-unit / 2;
+$splitPadding: $spacing-unit / 2;
 @mixin leftElement(){
   order: 1;
   padding-left: 0;
@@ -31,7 +31,7 @@ $splitPadding: $inuit-global-spacing-unit / 2;
 
 .c-media-text__media {
   order: 1;
-  margin-bottom: $inuit-global-spacing-unit;
+  margin-bottom: $spacing-unit;
 
   @include mix-break(tablet) {
     @include leftElement;

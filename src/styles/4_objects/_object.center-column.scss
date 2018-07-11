@@ -1,9 +1,6 @@
 
 .o-center-column {
-  display: block;
-  width: 100%;
-  max-width: $paragraph-max-width;
-  @include mix-center-block;
 
+  @include mix-center-column;
 
 }

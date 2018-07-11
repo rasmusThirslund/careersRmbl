@@ -13,7 +13,7 @@ Extensions for the inuit type layout system
 @mixin cell-padded($bp-name) {
   @include mix-break($until: #{$bp-name}) {
     > .o-layout__item {
-      margin-bottom: $inuit-global-spacing-unit;
+      margin-bottom: $spacing-unit;
     }
   }
 }
@@ -22,7 +22,7 @@ Extensions for the inuit type layout system
 .o-layout--padded\@mobile {
   @include mix-break(mobile, tablet) {
     > .o-layout__item {
-      margin-bottom: $inuit-global-spacing-unit;
+      margin-bottom: $spacing-unit;
     }
   }
 }
