@@ -100,7 +100,7 @@ $mq-show-breakpoints: (mobile,tablet,desktop, wide);
 @import "1_tools/tools.mixin.list";
 @import "1_tools/tools.mixin.sectiongap";
 @import "1_tools/tools.mixin.centercolumn"; // dep on ... spacings mixin
-
+@import "../../node_modules/sass-rem/rem";  //https://github.com/pierreburel/sass-rem
 
 // GENERIC
 @import "../../node_modules/inuitcss/generic/generic.box-sizing";
@@ -166,6 +166,7 @@ $mq-show-breakpoints: (mobile,tablet,desktop, wide);
 @import "5_components/comp.contact";
 @import "5_components/comp.links";
 @import "5_components/comp.media-panel";
+@import "5_components/comp.hero";
 
 
 // (PAGES)  // custom

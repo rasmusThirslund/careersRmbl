@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inuitcss boilerplate</title>
+<link href="styles/bundle.css" rel="stylesheet"></head>
+<body class="c-styleguide">
+<div class="o-wrapper">
+    <h1 class="o-heading-large">Framework css stuff</h1>
+
+    <h3>Breakpoint (tbd)</h3>
+
+    <!--
+        ***********************************************************
+    -->
+
+    <h3>Grid </h3>
+    <div>
+
+        <p>o-layout layout</p>
+        <p>Utility classes are used for defining widths at different breakpoints. They can be used on all elements</p>
+    </div>
+    <textarea class="o-box u-1/1">
+        <div class="o-layout">
+                 <div class="o-layout__item  u-1/2">
+                 </div>
+                 <div class="o-layout__item  u-1/2">
+                 </div>
+      </div>
+    </textarea>
+    
+    <div class="o-box c-styleguide__layout">
+
+        <div class="o-layout">
+            <div class="o-layout__item u-1/1"><div>cell</div></div>
+
+            <div class="o-layout__item  u-1/2"><div>cell</div>
+            </div>
+            <div class="o-layout__item  u-1/2"><div>cell</div>
+            </div>
+
+            <div class="o-layout__item u-1/3"><div>cell</div></div>
+            <div class="o-layout__item u-1/3"><div>cell</div></div>
+            <div class="o-layout__item u-1/3"><div>cell</div></div>
+
+            <div class="o-layout__item u-1/4"><div>cell</div></div>
+            <div class="o-layout__item u-1/4"><div>cell</div></div>
+            <div class="o-layout__item u-1/4"><div>cell</div></div>
+            <div class="o-layout__item u-1/4"><div>cell</div></div>
+
+            <div class="o-layout__item u-1/5"><div>cell</div></div>
+            <div class="o-layout__item u-1/5"><div>cell</div></div>
+            <div class="o-layout__item u-1/5"><div>cell</div></div>
+            <div class="o-layout__item u-1/5"><div>cell</div></div>
+            <div class="o-layout__item u-1/5"><div>cell</div></div>
+
+            <div class="o-layout__item u-1/6@tablet"><div>cell</div></div>
+            <div class="o-layout__item u-1/6@tablet"><div>cell</div></div>
+            <div class="o-layout__item u-1/6@tablet"><div>cell</div></div>
+            <div class="o-layout__item u-1/6@tablet"><div>cell</div></div>
+            <div class="o-layout__item u-1/6@tablet"><div>cell</div></div>
+            <div class="o-layout__item u-1/6@tablet"><div>cell</div></div>
+
+
+
+        </div>
+        <br/>
+        <br>
+
+        <div class="o-layout">
+            <div class="o-layout__item u-2/3@tablet u-push-1/6@tablet"><div>u-2/3 u-push-1/6</div></div>
+        </div>
+        <br/>
+
+        <hr/>
+
+        <!--
+            ***********************************************************
+        -->
+
+        <h3>Media</h3>
+        <p>straight</p>
+        <div class="o-media">
+            <div class="o-media__img">
+                <img alt="Placeholder Image and Some Alt Text" src="https://placehold.it/350x150" title="A title element for this placeholder image."/>
+            </div>
+            <div class="o-media__body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet animi cum quasi voluptates? Aliquam consequuntur, dolore eaque id maxime nesciunt possimus reprehenderit soluta! Beatae dicta distinctio illum qui sint.
+            </div>
+
+        </div>
+        <p>
+            varianter: flush, tiny, small, large, huge, reverse (virker på alle)
+        </p>
+        <p>custom add on: <strong>stack</strong></p>
+        <div class="o-media o-media--stack">
+            <div class="o-media__img">
+                <img alt="Placeholder Image and Some Alt Text" src="https://placehold.it/350x150" title="A title element for this placeholder image."/>
+            </div>
+            <div class="o-media__body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet animi cum quasi voluptates? Aliquam consequuntur, dolore eaque id maxime nesciunt possimus reprehenderit soluta! Beatae dicta distinctio illum qui sint.
+            </div>
+        </div>
+
+
+        <!--
+            ***********************************************************
+        -->
+
+        <br/>
+        <br/>
+        <hr/>
+        <h3>Flag object</h3>
+        <p>
+            The flag object is a design pattern similar to the media object, however it
+            <br/>* utilises `display: table[-cell];` to give us control over the vertical
+            <br/>* alignments of the text and image.
+            <br/>*
+            <br/>* http://csswizardry.com/2013/05/the-flag-object/
+        </p>
+
+
+        <div class="o-flag">
+            <div class="o-flag__img">
+                <img alt="Placeholder Image and Some Alt Text" src="https://placehold.it/350x150" title="A title element for this placeholder image."/>
+            </div>
+            <div class="o-flag__body">
+                <p><strong>Default</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias, aliquam </p>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="o-flag  o-flag--reverse">
+            <div class="o-flag__img">
+                <img alt="Placeholder Image and Some Alt Text" src="https://placehold.it/350x150" title="A title element for this placeholder image."/>
+            </div>
+            <div class="o-flag__body">
+                <p><strong>flush, tiny, <mark>reverse</mark>, small, large, huge</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias, aliquam </p>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="o-flag  o-flag--top">
+            <div class="o-flag__img">
+                <img alt="Placeholder Image and Some Alt Text" src="https://placehold.it/350x150" title="A title element for this placeholder image."/>
+            </div>
+            <div class="o-flag__body">
+                <p><strong>Top</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias, aliquam </p>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="o-flag  o-flag--bottom">
+            <div class="o-flag__img">
+                <img alt="Placeholder Image and Some Alt Text" src="https://placehold.it/350x150" title="A title element for this placeholder image."/>
+            </div>
+            <div class="o-flag__body">
+                <p><strong>Bottom</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias, aliquam </p>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+        <hr/>
+        <h3>List-bare</h3>
+        <p>
+            Strip list-like appearance from lists by removing their bullets and any
+             indentation.
+
+        </p>
+
+        <p><strong>A list - ul > li</strong></p>
+        <ul class="o-list-bare">
+            <li class="o-list-bare__item">One liner</li>
+            <li class="o-list-bare__item">Two to tango</li>
+            <li class="o-list-bare__item">Three is a crowd</li>
+        </ul>
+
+
+        <br/>
+        <br/>
+        <hr/>
+        <h3>List-inline</h3>
+        <p>
+            The list-inline object simply displays a list of items in one line.
+        </p>
+
+        <p><strong>A list - ul > li</strong></p>
+        <ul class="o-list-inline">
+            <li class="o-list-inline__item">One liner... </li>
+            <li class="o-list-inline__item">Two to tango...</li>
+            <li class="o-list-inline__item">Three is a crowd...</li>
+        </ul>
+
+
+
+
+        <br/>
+        <br/>
+        <hr/>
+        <h3>box</h3>
+        <p>
+            The box object simply boxes off content. Extend with cosmetic styles in the
+             Components layer.
+
+        </p>
+
+    <div class="o-box" style="background: #eee;">
+        <div style="" class="u-last-child-no-bottom-margin">
+            <p>Content be here, w. inline style background<br/>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta doloremque enim expedita id minima molestiae quo, voluptatum. Ab animi aperiam dolorum eum magni natus sed. Eligendi eos esse nesciunt sit.
+            </p>
+        </div>
+    </div>
+        <p>
+            Padding-variations: flush, tiny, small, large, huge
+        </p>
+
+
+
+
+
+        <br/>
+        <br/>
+        <hr/>
+        <h3>block</h3>
+        <p>
+            Stacked image-with-text object. A simple abstraction to cover a very commonly
+             occurring design pattern.
+
+        </p>
+        <p>
+            Alignment variations: right, left
+        </p>
+        <p>
+            size variants: flush, tiny, small, large, huge
+        </p>
+
+        <div class="o-block">
+            <div class="o-block__img">
+                <img alt="Placeholder Image and Some Alt Text" src="https://placehold.it/350x150" title="A title element for this placeholder image."/>
+            </div>
+            <div class="o-block__body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta doloremque enim expedita id minima molestiae quo, voluptatum. Ab animi aperiam dolorum eum magni natus sed. Eligendi eos esse nesciunt sit.
+                </p>
+            </div>
+        </div>
+
+
+        <br/>
+        <br/>
+        <hr/>
+        <h3>Ratio</h3>
+        <p>
+            Create ratio-bound content blocks, to keep media (e.g. images, videos) in
+             their correct aspect ratios.
+            <br/>
+            http://alistapart.com/article/creating-intrinsic-ratios-for-video
+            <br/>
+            Default is a 1:1 ratio (i.e. a perfect square).
+        </p>
+
+
+        <div class="o-layout">
+            <div class="o-layout__item u-1/2 u-1/3@tablet  u-1/4@wide">
+
+                <div class="o-ratio" style="border: 1px solid #ccc;">
+                    <div class="o-ratio__content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias at atque consequatur error et facilis id maxime nemo numquam obcaecati omnis optio qui quo repudiandae sint, soluta totam ut?
+                        </p>
+                    </div>
+                </div>
+                    <p>Default ratio 1:1</p>
+
+            </div>
+
+            <div class="o-layout__item u-1/2  u-1/3@tablet  u-1/4@wide">
+
+                <div class="o-ratio  o-ratio--4:3" >
+                    <img class="o-ratio__content" alt="Placeholder Image and Some Alt Text" src="https://placehold.it/750x350" title="A title element for this placeholder image."/>
+
+                </div>
+                <p>Ratio 4:3 ==> o-ratio--4:3</p>
+
+            </div>
+
+            <div class="o-layout__item u-1/2  u-1/3@tablet  u-1/4@wide">
+
+                <div class="o-ratio o-ratio--golden-ratio" style="border: 1px solid #ccc;">
+                    <div class="o-ratio__content">
+                    </div>
+                    <img class="o-ratio__content" alt="Placeholder Image and Some Alt Text" src="https://placehold.it/750x350" title="A title element for this placeholder image."/>
+
+                </div>
+                <p>Golden ratio ==> o-ratio--golden-ratio</p>
+
+            </div>
+
+
+            <div class="o-layout__item u-1/2  u-1/3@tablet  u-1/4@wide">
+
+                <div class="o-ratio  o-ratio--2:1" >
+                    <img class="o-ratio__content" alt="Placeholder Image and Some Alt Text" src="https://placehold.it/750x350" title="A title element for this placeholder image."/>
+
+                </div>
+                <p>Ratio 2:1 ==> o-ratio--2:1</p>
+
+            </div>
+        </div>
+
+
+<div class="o-layout">
+            <div class="o-layout__item u-2/3@desktop u-push-1/6@desktop">
+
+                <div class="o-ratio  o-ratio--16:9" >
+                    <!--<img class="o-ratio__content" alt="Placeholder Image and Some Alt Text" src="https://placehold.it/750x350" title="A title element for this placeholder image."/>-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MNCzSfv4hX8?rel=0&amp;showinfo=0&amp;start=30" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                </div>
+                <p>Ratio 16:9 ==> o-ratio--16:9</p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <br/>
+        <br/>
+        <hr/>
+        <h3>Crop</h3>
+        <p>
+            A list of cropping ratios that get generated as modifier classes.
+        </p>
+
+        <div class="o-layout">
+            <div class="o-layout__item u-1/3@tablet">
+                <div class="o-crop  o-crop--4:3" style="border: 1px solid #eee;">
+                    <img class="o-crop__content o-crop__content--center-center" alt="Placeholder Image and Some Alt Text" src="https://placehold.it/350x150" title="A title element for this placeholder image."/>
+
+                </div>
+            </div>
+            <div class="o-layout__item  u-2/3@tablet">
+
+                <p>
+                    <strong>Ratio modifiers</strong>
+                    <br/>
+                    .o-crop--4:3 <br/>
+                    .o-crop--16:9 <br/>
+                    .o-crop--2:1
+                </p>
+                <p>
+                    <strong>Content modifiers:</strong> Placement of image in container: <br/>
+                    .o-crop__content--left-top <br/>
+                    .o-crop__content--left-center <br/>
+
+                    .o-crop__content--left-bottom <br/>
+
+                    .o-crop__content--right-top <br/>
+                    .o-crop__content--right-center<br/>
+                    .o-crop__content--right-bottom <br/>
+
+                    .o-crop__content--center-top <br/>
+
+                    .o-crop__content--center,<br/>
+                    .o-crop__content--center-center<br/>
+
+                    .o-crop__content--center-bottom
+                </p>
+                <p>
+                    <strong>Fill modifier</strong><br/>
+                    .o-crop--fill
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <br/>
+        <br/>
+        <hr/>
+        <h3>Table</h3>
+        <p>
+            A simple object for manipulating the structure of HTML `table`s.
+            <br/>
+            (NB! grey bg color and white borders are only for this example)
+        </p>
+        <style>
+            .o-table th, td {
+                    background: #eee;
+                border: 1px solid white;
+                }
+
+        </style>
+        <table class="o-table o-table--fixed">
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>Lion</td>
+                    <td>Africa</td>
+                </tr>
+                <tr>
+                    <td>Norwegian Lemming</td>
+                    <td>Europe</td>
+                </tr>
+                <tr>
+                    <td>Seal</td>
+                    <td>Antarctica</td>
+                </tr>
+                <tr>
+                    <td>Tiger</td>
+                    <td>Asia</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            <strong>Modifiers</strong><br>
+            .o-table--fixed ==> equal size columns <br/>
+        </p>
+        <p>
+            <strong>Size variants (padding):</strong> <br/>
+            .o-table--tiny <br/>
+            .o-table--small <br/>
+            .o-table--large <br/>
+            .o-table--huge <br/>
+        </p>
+
+
+        <br>
+        <br>
+        <hr>
+        <h3>Pack</h3>
+        <p>
+            The pack object simply causes any number of elements pack up horizontally to
+             automatically fill an equal, fluid width of their parent.<br>
+            (decoration are for this example only)
+        </p>
+        <style>
+            .o-pack__item {
+                background: #eee;
+                border: 1px solid #ddd;
+            }
+        </style>
+        <div class="o-pack">
+            <div class="o-pack__item">item</div>
+            <div class="o-pack__item">item item</div>
+            <div class="o-pack__item">item item item</div>
+            <div class="o-pack__item">item item item item </div>
+            <div class="o-pack__item">item</div>
+            <div class="o-pack__item">item</div>
+        </div>
+        <br/>
+        <p>
+            <strong>Modifiers</strong><br/>
+            .o-pack--auto ==> Unequal-with items
+        </p>
+        <p>
+            <strong>Size Variants</strong> (paddings)<br/>
+            .o-pack--tiny <br/>
+            .o-pack--small <br/>
+            .o-pack--default <br/>
+            .o-pack--large <br/>
+            .o-pack--huge <br/>
+        </p>
+        <p>
+            <strong>Reversed order</strong><br/>
+            .o-pack--reverse
+        </p>
+
+
+</div>
+
+</div><!-- o-wrapper -->
+
+<script src="/bundle.js"></script>
+
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>

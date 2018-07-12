@@ -67,6 +67,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.9.0",
-    "inuitcss": "^6.0.0"
+    "inuitcss": "^6.0.0",
+    "sass-rem": "^2.0.1"
   }
 }

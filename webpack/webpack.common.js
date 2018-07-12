@@ -42,6 +42,11 @@ module.exports = {
             filename: 'objects-framework.html',
             template: Path.resolve(__dirname, PATH_HTML + '/objects-framework.html')
         }),
+        new HtmlWebpackPlugin({
+            filename: 'heroes.html',
+            template: Path.resolve(__dirname, PATH_HTML + '/heroes.html')
+        }),
+
 
 
     ],
