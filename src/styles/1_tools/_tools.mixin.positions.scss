@@ -1,0 +1,23 @@
+
+@mixin mix-place-center($direction: both) {
+  position: absolute;
+
+  @if $direction == both {
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  } @else if $direction == top {
+
+    top: 50%;
+    transform: translateY(-50%);
+
+  } @else if $direction == left {
+
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+}

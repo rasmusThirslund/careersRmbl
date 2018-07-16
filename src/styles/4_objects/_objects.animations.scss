@@ -1,0 +1,7 @@
+
+.o-fade-in {
+  transition: all 0.4s;
+  @include mix-fade-in;
+
+}
+

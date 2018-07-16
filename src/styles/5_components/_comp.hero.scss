@@ -1,32 +1,50 @@
+/**
+  todo: enlarge textsize on widexl screen - or constrain width!
+  todo: implement lazyload on generic basis
 
+
+  */
 
 .c-hero {
 
   position: relative;
+  overflow: hidden;
 
-
+  @include mix-text-light;
 
 }
 
+.c-hero__body {
+  position: relative;
+  z-index: 1;
+
+  p, h1, h2 {
+    @include mix-fade-in;
+  }
+
+}
+
+.c-hero__heading {
+  font-weight: normal;
+}
 
 .c-hero__video {
-//  background-color: #111;
-;
   overflow: hidden;
   > div {
-  @include mix-center-block;
+    @include mix-center-block;
     padding: rem($spacing-unit-large 0);
     max-width: rem(640px);
   }
 }
 
 .c-hero__image {
+  transition: $global-transition-hover-fx;
   position: relative;
   background: #eee;
   width: 100%;
   background-size: cover;
   background-position: center;
-  padding-top: 56.25%;
+  padding-top: 56.25%; // scale 16:9 todo: make variabel
   z-index: 0;
 
   img {
@@ -39,4 +57,120 @@
     opacity: 0;
   }
 
+  @media print {
+    background-image: none;
+    padding-top: 0;
+    position: static !important; // ayyrwr...!, to overwrite the layer modif styles
+    img {
+      position: static;
+      opacity: 1;
+    }
+  }
+
+}
+
+.c-hero:hover {
+  .c-hero__image {
+    transform: scale(1.1);
+  }
+}
+
+.c-hero__footer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+
+  // PULL up to text element.
+  // unit large => padding-bottom on panel-media
+  margin-top: -$spacing-unit-large;
+
+  @include mix-break(tablet) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    //z-index: 1;
+    margin-top: 0;
+  }
+
+}
+
+.c-hero__footer-content {
+
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border-spacing: $inuit-global-spacing-unit;
+  line-height: 2;
+  @include mix-capped;
+
+  > div {
+    display: table-cell;
+    vertical-align: bottom;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+  * { // if p tags comes in output
+    margin-bottom: 0;
+  }
+}
+
+// MODIFIERS
+//
+.c-hero--layers {
+
+  .c-hero__body {
+    position: relative;
+    height: 100%;
+    display: block;
+    width: 100%;
+  }
+  .c-hero__image {
+    position: absolute;
+    height: 100%;
+    padding-top: 0;
+    top: 0;
+    z-index: 0;
+  }
+  .c-panel-media {
+    position: static;
+    transform: none;
+  }
+
+  @include mix-break(tablet) {
+
+    .c-hero__body {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+
+    }
+    .c-hero__image {
+      position: relative; // absolute;
+      min-height: 50vh; // ?
+
+    }
+
+    // overwrite
+
+    .c-panel-media {
+      width: 100%;
+      @include mix-place-center();
+    }
+    .c-panel-media__body {
+      min-height: 0;
+    }
+  }
+
+}
+
+// MODIF SOLID BODY
+.c-hero__body--solid {
+  background-color: $color-blue-chill;
+
+  .c-hero__footer {
+    color: $color-white-opaque;
+  }
 }

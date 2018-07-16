@@ -1,0 +1,9 @@
+
+@mixin mix-capped{
+  text-transform: uppercase;
+  font-size: rem(11px);
+}
+
+@mixin mix-text-light {
+  color: white;
+}

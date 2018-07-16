@@ -101,6 +101,11 @@ $mq-show-breakpoints: (mobile,tablet,desktop, wide);
 @import "1_tools/tools.mixin.sectiongap";
 @import "1_tools/tools.mixin.centercolumn"; // dep on ... spacings mixin
 @import "../../node_modules/sass-rem/rem";  //https://github.com/pierreburel/sass-rem
+@import "1_tools/tools.mixin.positions";
+@import "1_tools/tools.mixin.typography";
+@import "1_tools/tools.mixin.animations";
+
+
 
 // GENERIC
 @import "../../node_modules/inuitcss/generic/generic.box-sizing";
@@ -131,6 +136,7 @@ $mq-show-breakpoints: (mobile,tablet,desktop, wide);
 //
 // Uncomment and add to this section as necessary.
 // overrides is in 0_settings
+@import "4_objects/objects.animations";
 @import "../../node_modules/inuitcss/objects/objects.wrapper";
 @import "../../node_modules/inuitcss/objects/objects.layout";
 @import "4_objects/objects.layout-ext";
@@ -151,6 +157,7 @@ $mq-show-breakpoints: (mobile,tablet,desktop, wide);
 @import "4_objects/object.center-column";
 @import "4_objects/object.richtext";
 @import "4_objects/objects.cards";
+@import "4_objects/objects.capped";
 
 
 
@@ -165,7 +172,7 @@ $mq-show-breakpoints: (mobile,tablet,desktop, wide);
 @import "5_components/comp.media-text";
 @import "5_components/comp.contact";
 @import "5_components/comp.links";
-@import "5_components/comp.media-panel";
+@import "5_components/comp.panel-media";
 @import "5_components/comp.hero";
 
 

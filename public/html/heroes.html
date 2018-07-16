@@ -14,57 +14,130 @@ zen/emmet:
 -->
 
 <main class="main">
-<div class="o-section">
-    <div class="o-wrapper">
+    <div class="o-section">
+        <div class="o-wrapper">
 
-        <div class="o-layout">
-            <div class="o-layout__item">
-                <h1>Heroes</h1>
+            <div class="o-layout">
+                <div class="o-layout__item">
+                    <h1>Heroes</h1>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<hr class="u-margin-vertical-huge"/>
+    <hr class="u-margin-vertical-huge"/>
 
-<!-- hero needs no o-section -->
+    <!-- hero needs no o-section -->
 
-    <div class="c-hero">
-    <!-- todo: rename c-panel-media to something panel cta quote -->
+    <section class="c-hero">
+        <!-- todo: rename c-panel-media to something panel cta quote -->
 
-        <div class="c-panel-media  c-panel-media--solid">
-            <div class="o-wrapper">
-                <div class="c-panel-media__body  u-text-white">
+        <!-- use this to make textbackbround solid blue "c-hero__body--solid" -->
+        <div class="c-hero__body  c-hero__body--solid">
 
-                    <h2>Title</h2>
-                    <p class="XXu-h4">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur assumenda
-                        consequatur, dolor ducimus explicabo facere hic impedit magnam, natus nesciunt omnis quaerat quasi rem
-                        repudiandae similique vero voluptates.
-                    </p>
-                    <!-- optional date and author -->
-                    <small class="u-caps u-text-grey">Date | Author</small>
+            <div class="c-panel-media">
+                <div class="o-wrapper">
+                    <div class="c-panel-media__body">
+
+                        <h1 class="c-hero__heading">Title</h1>
+                        <!-- optional date and author and other suff -->
+                        <p><small class="u-text-weak">Date | Author</small>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
+                            assumenda
+                            consequatur, dolor ducimus explicabo facere hic impedit magnam, natus nesciunt omnis quaerat
+                            quasi rem
+                            repudiandae similique vero voluptates.
+                        </p>
+
+                    </div>
                 </div>
+
             </div>
 
+            <div class="c-hero__footer">
+                <div class="c-hero__footer-content">
+                    <div>
+                        <!-- output ==> -->
+                        <p>some info here </p>
+                    </div>
+                    <div>
+                        <!-- output ==> -->
+                        other stuff here
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-<!--
-        <div class="c-hero__video">
-            <div class="o-ratio  o-ratio--16:9">
-                <div class="o-ratio__content">
-                    <video loop="" muted="" playsinline="" autoplay="" src="/public/video/Blurred Crowd of People Walking.mp4"
-                           type="video/mp4"></video>
-                </div>
-            </div>
-        </div> -->
+
+        <!--
+                <div class="c-hero__video">
+                    <div class="o-ratio  o-ratio--16:9">
+                        <div class="o-ratio__content">
+                            <video loop="" muted="" playsinline="" autoplay="" src="/public/video/Blurred Crowd of People Walking.mp4"
+                                   type="video/mp4"></video>
+                        </div>
+                    </div>
+                </div> -->
 
         <div class="c-hero__image" style="background-image: url('/public/img/_dummy/bg-dummy-1.jpg')">
+            <img src="/public/img/_dummy/bg-dummy-1.jpg" />
         </div>
 
 
-    </div>
+    </section>
+
+
+    <hr class="u-margin-vertical-huge"/>
+
+
+    <section class="c-hero  c-hero--layers">
+
+        <div class="c-hero__body">
+
+            <div class="c-panel-media">
+                <div class="o-wrapper">
+                    <div class="c-panel-media__body  ">
+
+                        <h1 class="c-hero__heading">Title</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
+                            assumenda
+                        </p>
+                        <!-- optional date and author -->
+                        <small class="u-caps u-text-grey">Date | Author</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-hero__footer">
+                <div class="c-hero__footer-content">
+                    <div>
+                        <!-- output ==> -->
+                        <p>some info here
+                        </p>
+                    </div>
+                    <div>
+                        <!-- output ==> -->
+                        other stuff here
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="c-hero__image" style="background-image: url('/public/img/_dummy/bg-dummy-1.jpg')">
+            <img src="/public/img/_dummy/bg-dummy-1.jpg" />
+
+        </div>
+
+
+    </section>
+
+    <hr class="u-margin-vertical-huge"/>
 
 
 </main>

@@ -9,6 +9,10 @@
 
 // Standardise some UI treatments.
 
+$animation-speed: 2s;
+$animation-speed-fast: 300ms;
+$animation-speed-slow: 4s;
 $global-radius: 3px !default;
 $global-transition: all 300ms ease-in-out !default;
+$global-transition-hover-fx: all 800ms ease-in !default;
 
