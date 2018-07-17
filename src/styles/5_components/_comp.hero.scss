@@ -12,16 +12,37 @@
 
   @include mix-text-light;
 
+  // overwrite panel media
+  .c-panel-media {
+    background-color: transparent;
+  }
+  .c-panel-media__details {
+    @include mix-text-weak;
+
+
+    // set some extra margin bottom on the text. in tablet and up bp's
+    // and only when details element is present before any other element
+    // (is has no effect in mobile because of absolute pos
+
+    @include mix-break(tablet) {
+
+      + *:last-of-type {
+        margin-bottom: rem($spacing-unit);
+      }
+    }
+  }
+
 }
 
 .c-hero__body {
   position: relative;
   z-index: 1;
 
+  background-color: $color-blue-chill; // default, not layered
+
   p, h1, h2 {
     @include mix-fade-in;
   }
-
 }
 
 .c-hero__heading {
@@ -30,10 +51,12 @@
 
 .c-hero__video {
   overflow: hidden;
-  > div {
-    @include mix-center-block;
-    padding: rem($spacing-unit-large 0);
-    max-width: rem(640px);
+  transition: $global-transition;
+  max-width: 1300px;
+  @include mix-center-block;
+
+  @include mix-break(wide) {
+    margin-top: 4rem;
   }
 }
 
@@ -84,6 +107,8 @@
   // unit large => padding-bottom on panel-media
   margin-top: -$spacing-unit-large;
 
+  @include mix-text-weak; // default
+
   @include mix-break(tablet) {
     position: absolute;
     bottom: 0;
@@ -125,6 +150,7 @@
     height: 100%;
     display: block;
     width: 100%;
+    background-color: transparent; // reset by overwrite
   }
   .c-hero__image {
     position: absolute;
@@ -136,6 +162,11 @@
   .c-panel-media {
     position: static;
     transform: none;
+  }
+
+  .c-hero__footer,
+  .c-panel-media__details {
+    @include mix-text-weak(reset); // reset by overwrite
   }
 
   @include mix-break(tablet) {
@@ -166,11 +197,3 @@
 
 }
 
-// MODIF SOLID BODY
-.c-hero__body--solid {
-  background-color: $color-blue-chill;
-
-  .c-hero__footer {
-    color: $color-white-opaque;
-  }
-}

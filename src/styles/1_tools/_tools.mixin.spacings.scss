@@ -38,3 +38,15 @@
     margin: 0;
   }
 }
+
+@mixin mix-space-vertical($top: $spacing-unit, $bottom: false) {
+
+  $bottomSpacing: '';
+  @if $bottom {
+    $bottomSpacing: $bottom;
+  } @else {
+    $bottomSpacing: $top;
+  }
+  padding-top: $top;
+  padding-bottom: $bottomSpacing;
+}

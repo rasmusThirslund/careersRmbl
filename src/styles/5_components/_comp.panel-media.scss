@@ -1,8 +1,9 @@
 $block: c-panel-media;
-
+$bg-default: $color-grey-light;
 .#{$block} {
 
   position: relative;
+  background-color: $color-grey-light;
 
 }
 
@@ -18,14 +19,13 @@ $block: c-panel-media;
   background-repeat: no-repeat;
   background-position: center;
 
-
 }
 
 .#{$block}__body {
 
-  $gap: $spacing-unit-large;
   @include mix-center-block;
   @include mix-last-child-no-bottom-margin;
+  @include mix-space-vertical($spacing-unit-large);
 
   display: flex;
   flex-direction: column;
@@ -34,17 +34,24 @@ $block: c-panel-media;
   position: relative;
   z-index: auto;
   max-width: $paragraph-max-width;
-  padding-top: $gap;
-  padding-bottom: $gap;
 
-  min-height: 400px;
-
+  @include mix-break(desktop) {
+    @include mix-space-vertical($spacing-unit-huge);
+  }
 
 }
 
+.#{$block}__details {
+  @include mix-capped;
+
+}
 
 // MODIFS
 
-.#{$block}--solid {
+.#{$block}--th-blue {
   background: $color-blue-chill;
+  @include mix-text-light;
+  .#{$block}__details {
+    @include mix-text-weak;
+  }
 }

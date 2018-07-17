@@ -22,10 +22,17 @@ zen/emmet:
                     <h1>Heroes</h1>
                 </div>
             </div>
+            <div class="o-layout">
+                <div class="o-layout__item">
+                    <h2>Hero with image - stacked and layered</h2>
+                </div>
+            </div>
         </div>
     </div>
 
-    <hr class="u-margin-vertical-huge"/>
+
+    <!-- ********************* -->
+
 
     <!-- hero needs no o-section -->
 
@@ -33,7 +40,7 @@ zen/emmet:
         <!-- todo: rename c-panel-media to something panel cta quote -->
 
         <!-- use this to make textbackbround solid blue "c-hero__body--solid" -->
-        <div class="c-hero__body  c-hero__body--solid">
+        <div class="c-hero__body">
 
             <div class="c-panel-media">
                 <div class="o-wrapper">
@@ -41,8 +48,7 @@ zen/emmet:
 
                         <h1 class="c-hero__heading">Title</h1>
                         <!-- optional date and author and other suff -->
-                        <p><small class="u-text-weak">Date | Author</small>
-                        </p>
+                        <p class="c-panel-media__details">Date | Author</p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
                             assumenda
@@ -72,26 +78,17 @@ zen/emmet:
         </div>
 
 
-        <!--
-                <div class="c-hero__video">
-                    <div class="o-ratio  o-ratio--16:9">
-                        <div class="o-ratio__content">
-                            <video loop="" muted="" playsinline="" autoplay="" src="/public/video/Blurred Crowd of People Walking.mp4"
-                                   type="video/mp4"></video>
-                        </div>
-                    </div>
-                </div> -->
-
         <div class="c-hero__image" style="background-image: url('/public/img/_dummy/bg-dummy-1.jpg')">
-            <img src="/public/img/_dummy/bg-dummy-1.jpg" />
+            <img src="/public/img/_dummy/bg-dummy-1.jpg"/>
         </div>
 
 
     </section>
 
+    <br/>
 
-    <hr class="u-margin-vertical-huge"/>
 
+    <!-- ********************* -->
 
     <section class="c-hero  c-hero--layers">
 
@@ -107,7 +104,7 @@ zen/emmet:
                             assumenda
                         </p>
                         <!-- optional date and author -->
-                        <small class="u-caps u-text-grey">Date | Author</small>
+                        <p class="c-panel-media__details">Date | Author</p>
                     </div>
                 </div>
             </div>
@@ -130,14 +127,146 @@ zen/emmet:
 
 
         <div class="c-hero__image" style="background-image: url('/public/img/_dummy/bg-dummy-1.jpg')">
-            <img src="/public/img/_dummy/bg-dummy-1.jpg" />
+            <img src="/public/img/_dummy/bg-dummy-1.jpg"/>
 
         </div>
 
 
     </section>
 
+
+    <!-- ********************* -->
+
+
+    <div class="o-section">
+        <div class="o-wrapper">
+            <h2>Hero with video</h2>
+        </div>
+    </div>
+
+
+    <!-- video variant -->
+
+    <section class="c-hero">
+
+        <div class="c-hero__body">
+
+            <div class="c-panel-media">
+                <div class="o-wrapper">
+                    <div class="c-panel-media__body  ">
+
+                        <h1 class="c-hero__heading">Title</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
+                            assumenda
+                        </p>
+                        <!-- optional date and author -->
+                        <small class="c-panel-media__details">Date | Author</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-hero__footer">
+                <div class="c-hero__footer-content">
+                    <div>
+                        <!-- output ==> -->
+                        <p>some info here
+                        </p>
+                    </div>
+                    <div>
+                        <!-- output ==> -->
+                        other stuff here
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+            <div class="c-hero__video">
+                <div class="o-ratio  o-ratio--16:9">
+                    <div class="o-ratio__content">
+                        <video loop="" muted="" playsinline="" autoplay="" src="/public/video/Blurred Crowd of People Walking.mp4"
+                               type="video/mp4"></video>
+                    </div>
+                </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ********************* -->
+
+
     <hr class="u-margin-vertical-huge"/>
+
+
+
+    <div class="o-section">
+        <div class="o-wrapper">
+            <h2>Media Panels</h2>
+        </div>
+    </div>
+
+    <div class="c-panel-media  o-section">
+
+        <div class="c-panel-media__bg" style="background-image: url('/public/img/_dummy/bg-dummy-1.jpg');">
+            <!--<img src="/public/img/_dummy/bg-dummy-1.jpg" />-->
+        </div>
+
+        <div class="o-wrapper">
+            <div class="c-panel-media__body  u-text-white">
+
+                <h2>Title</h2>
+                <p class="u-h4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
+                    assumenda
+                    consequatur, dolor ducimus explicabo facere hic impedit magnam, natus nesciunt omnis quaerat quasi
+                    rem
+                    repudiandae similique vero voluptates.
+                </p>
+                <!-- optional date and author -->
+                <p class="c-panel-media__details">Date | Author</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="c-panel-media c-panel-media--th-blue  o-section">
+        <div class="o-wrapper">
+            <div class="c-panel-media__body">
+
+                <h2>Title</h2>
+                <p class="XXu-h4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
+                    assumenda
+                    consequatur, dolor ducimus explicabo facere hic impedit magnam, natus nesciunt omnis quaerat quasi
+                    rem
+                    repudiandae similique vero voluptates.
+                </p>
+                <!-- optional date and author -->
+                <small class="c-panel-media__details">Date | Author</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="c-panel-media  o-section">
+        <div class="o-wrapper">
+            <div class="c-panel-media__body">
+
+                <h2>RAMBOLL INGENUITY</h2>
+                <p>
+                    bam bam<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
+                    assumenda
+                </p>
+                <!-- optional date and author -->
+                <small class="c-panel-media__details">Date | Author</small>
+            </div>
+        </div>
+    </div>
 
 
 </main>

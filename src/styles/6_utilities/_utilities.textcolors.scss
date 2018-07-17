@@ -6,6 +6,6 @@
   color: $color-body-grey !important;
 }
 
-.u-text-weak {
-  color: $color-white-opaque !important;
+.u-text-opaque {
+  @include mix-text-weak( !important);
 }

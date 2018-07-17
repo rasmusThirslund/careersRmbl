@@ -1,9 +1,18 @@
-
-@mixin mix-capped{
+@mixin mix-capped($defaultSmall: 11px) {
   text-transform: uppercase;
-  font-size: rem(11px);
+  font-size: rem($defaultSmall);
 }
 
 @mixin mix-text-light {
   color: white;
+}
+
+@mixin mix-text-weak($important: '') {
+
+  /**  NB, reset functionality is experimental */
+  @if $important == reset {
+    color: inherit;
+  } @else {
+    color: $color-white-opaque #{$important}
+  }
 }

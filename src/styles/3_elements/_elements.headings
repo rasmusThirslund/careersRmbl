@@ -9,3 +9,9 @@ $inuit-font-size-h4:  1.25 * $base-font-size; //  20px; // 20 / 16 = 1,25
 $inuit-font-size-h5:  18px;
 $inuit-font-size-h6:  16px;
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
