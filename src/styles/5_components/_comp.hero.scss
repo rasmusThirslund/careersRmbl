@@ -59,6 +59,28 @@
     margin-top: 4rem;
   }
 }
+/**
+alternative more spacious props:
+ditch the o-ratio element and have just structure lige this
+<c-hero__video>
+  <video/>
+</c-hero__video>
+
+.c-hero__video {
+
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  transition: $global-transition;
+
+  video {
+
+    min-width: 100%;
+    min-height: 100%;
+    @include mix-place-center;
+  }
+}
+ */
 
 .c-hero__image {
   transition: $global-transition-hover-fx;
