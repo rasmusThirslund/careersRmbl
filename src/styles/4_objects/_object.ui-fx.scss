@@ -1,0 +1,19 @@
+/**
+  o.grad
+  creates a position 100%*100% with a
+  linear gradient from transparent to black from top to down.
+
+  params:
+  1) color, default is black
+  2) direction (deg), default is 180deg
+
+ */
+
+// uses default black
+.o-grad {
+  @include mix-gradient-layer()
+}
+
+.o-grad-blue {
+  @include mix-gradient-layer($color-blue-chill);
+}

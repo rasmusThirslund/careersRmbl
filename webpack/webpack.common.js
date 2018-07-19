@@ -46,8 +46,10 @@ module.exports = {
             filename: 'heroes.html',
             template: Path.resolve(__dirname, PATH_HTML + '/heroes.html')
         }),
-
-
+        new HtmlWebpackPlugin({
+            filename: 'frontpage-search.html',
+            template: Path.resolve(__dirname, PATH_HTML + '/frontpage-search.html')
+        }),
 
     ],
     resolve: {

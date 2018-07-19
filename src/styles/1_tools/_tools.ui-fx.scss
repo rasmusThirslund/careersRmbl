@@ -1,0 +1,11 @@
+@mixin mix-gradient-layer($destColor: black, $deg: 180deg) {
+  background-image: linear-gradient($deg, transparent, $destColor);
+  height: 100%;
+  /* margin-bottom: 10rem; */
+  /* border: 1px solid lime; */
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  opacity: 0.4;
+}

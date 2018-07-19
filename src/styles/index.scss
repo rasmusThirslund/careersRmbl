@@ -104,7 +104,8 @@ $mq-show-breakpoints: (mobile,tablet,desktop, wide);
 @import "1_tools/tools.mixin.positions";
 @import "1_tools/tools.mixin.typography";
 @import "1_tools/tools.mixin.animations";
-
+@import "1_tools/tools.mixin.image";
+@import "1_tools/tools.ui-fx";
 
 
 // GENERIC

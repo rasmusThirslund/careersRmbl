@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page components</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--<link type="text/css" rel="stylesheet" href="/styles/bundle.css"> -->
+</head>
+<body>
+<!--
+zen/emmet:
+.o-section>.o-wrapper>.o-layout>.o-layout__item
+-->
+
+<main class="main">
+
+    <section class="c-search">
+
+        <div class="c-search__bg" style="background-image: url(/public/img/_dummy/dummy-2.jpg)">
+
+            <img class="c-search__bg-filler" src="/public/img/_dummy/dummy-2.jpg"/>
+        </div>
+
+        <div class="c-search__body" style="background-image: url(/public/img/_dummy/dummy-2.jpg)">
+            <div class="o-wrapper">
+
+
+                <div class="c-search__field">
+                    <form action="">
+                        <input class="c-search__input" id="search_field" type="text"
+                               placeholder="Find your adventure at Ramboll"/>
+                        <button class="c-search__btn  c-btn  c-btn--ghost  c-btn--tertiary"> Go</button>
+                        <label class="c-search__label" for="search_field">Find your adventure at Ramboll</label>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="c-search__cards">
+            <div class="o-wrapper">
+
+                <div class="o-layout  o-layout--padded@mobile">
+                    <div class="o-layout__item u-1/3@tablet">
+                        <div class="o-card">
+                            <%= require('html-loader!./views/comp.card.html') %>
+                        </div>
+                    </div>
+                    <div class="o-layout__item u-1/3@tablet">
+                        <%= require('html-loader!./views/comp.card.html') %>
+                    </div>
+                    <div class="o-layout__item u-1/3@tablet">
+                        <%= require('html-loader!./views/comp.card.html') %>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- ********************* -->
+
+    <h1>Video version </h1>
+
+    <section class="c-search">
+
+        <div class="c-search__bg">
+            <video loop="" muted="" playsinline="" autoplay=""
+                   src="/public/video/Blurred Crowd of People Walking.mp4"
+                   type="video/mp4"></video>
+        </div>
+
+        <div class="c-search__body">
+            <div class="o-wrapper">
+
+
+                <div class="c-search__field">
+                    <form action="">
+                        <input class="c-search__input" id="search_fieldX" type="text"
+                               placeholder="Find your adventure at Ramboll"/>
+                        <button class="c-search__btn  c-btn  c-btn--ghost  c-btn--tertiary"> Go</button>
+                        <label class="c-search__label" for="search_fieldX">
+                            Find your adventure at Ramboll</label>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="c-search__cards">
+            <div class="o-wrapper">
+
+                <div class="o-layout  o-layout--padded@mobile">
+                    <div class="o-layout__item u-1/3@tablet">
+                        <div class="o-card">
+                            <%= require('html-loader!./views/comp.card.html') %>
+                        </div>
+                    </div>
+                    <div class="o-layout__item u-1/3@tablet">
+                        <%= require('html-loader!./views/comp.card.html') %>
+                    </div>
+                    <div class="o-layout__item u-1/3@tablet">
+                        <%= require('html-loader!./views/comp.card.html') %>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <hr class="u-margin-vertical-huge"
+
+</main>
+
+
+<script src="/bundle.js"></script>
+
+</body>
+</html>
