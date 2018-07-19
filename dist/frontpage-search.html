@@ -14,181 +14,84 @@ zen/emmet:
 -->
 
 <main class="main">
-    <div class="o-section">
-        <div class="o-wrapper">
 
-            <div class="o-layout">
-                <div class="o-layout__item">
-                    <h1>Heroes</h1>
+    <section class="c-search">
+
+        <div class="c-search__bg" style="background-image: url(/public/img/_dummy/dummy-2.jpg)">
+
+            <img class="c-search__bg-filler" src="/public/img/_dummy/dummy-2.jpg"/>
+        </div>
+
+        <div class="c-search__body" style="background-image: url(/public/img/_dummy/dummy-2.jpg)">
+            <div class="o-wrapper">
+
+
+                <div class="c-search__field">
+                    <form action="">
+                        <input class="c-search__input" id="search_field" type="text"
+                               placeholder="Find your adventure at Ramboll"/>
+                        <button class="c-search__btn  c-btn  c-btn--ghost  c-btn--tertiary"> Go</button>
+                        <label class="c-search__label" for="search_field">Find your adventure at Ramboll</label>
+                    </form>
                 </div>
-            </div>
-            <div class="o-layout">
-                <div class="o-layout__item">
-                    <h2>Hero with image - stacked and layered</h2>
-                </div>
+
             </div>
         </div>
+
+        <div class="c-search__cards">
+            <div class="o-wrapper">
+
+                <div class="o-layout  o-layout--padded@mobile">
+                    <div class="o-layout__item u-1/3@tablet">
+                        <div class="o-card">
+                            <div class="o-card">
+    <img src="https://placehold.it/750x350" title="An image" />
+    <div class="o-card__body">
+        <p class="o-card__kicker">I'm a "kicker"</p>
+        <h4 class="c-heading--tiny">I'm the title</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, ea fugit incidunt magnam quam quidem. Eaque maiores perferendis suscipit!
+        </p>
+        <p>
+            <a href="#where_to">I'm a card link</a>
+        </p>
+
     </div>
-
-
-    <!-- ********************* -->
-
-
-    <!-- hero needs no o-section -->
-
-    <section class="c-hero">
-        <!-- todo: rename c-panel-media to something panel cta quote -->
-
-        <!-- use this to make textbackbround solid blue "c-hero__body--solid" -->
-        <div class="c-hero__body">
-
-            <div class="c-panel-media">
-                <div class="o-wrapper">
-                    <div class="c-panel-media__body">
-
-                        <h1 class="c-hero__heading">Title</h1>
-                        <!-- optional date and author and other suff -->
-                        <p class="c-panel-media__details">Date | Author</p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
-                            assumenda
-                            consequatur, dolor ducimus explicabo facere hic impedit magnam, natus nesciunt omnis quaerat
-                            quasi rem
-                            repudiandae similique vero voluptates.
-                        </p>
-
+</div>
+                        </div>
                     </div>
-                </div>
+                    <div class="o-layout__item u-1/3@tablet">
+                        <div class="o-card">
+    <img src="https://placehold.it/750x350" title="An image" />
+    <div class="o-card__body">
+        <p class="o-card__kicker">I'm a "kicker"</p>
+        <h4 class="c-heading--tiny">I'm the title</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, ea fugit incidunt magnam quam quidem. Eaque maiores perferendis suscipit!
+        </p>
+        <p>
+            <a href="#where_to">I'm a card link</a>
+        </p>
 
-            </div>
-
-            <div class="c-hero__footer">
-                <div class="c-hero__footer-content">
-                    <div>
-                        <!-- output ==> -->
-                        <p>some info here </p>
-                    </div>
-                    <div>
-                        <!-- output ==> -->
-                        other stuff here
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="c-hero__image" style="background-image: url('/public/img/_dummy/bg-dummy-1.jpg')">
-            <img src="/public/img/_dummy/bg-dummy-1.jpg"/>
-        </div>
-
-
-    </section>
-
-    <br/>
-
-
-    <!-- ********************* -->
-
-    <section class="c-hero  c-hero--layers">
-
-        <div class="c-hero__body">
-
-            <div class="c-panel-media">
-                <div class="o-wrapper">
-                    <div class="c-panel-media__body  ">
-
-                        <h1 class="c-hero__heading">Title</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
-                            assumenda
-                        </p>
-                        <!-- optional date and author -->
-                        <p class="c-panel-media__details">Date | Author</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="c-hero__footer">
-                <div class="c-hero__footer-content">
-                    <div>
-                        <!-- output ==> -->
-                        <p>some info here
-                        </p>
-                    </div>
-                    <div>
-                        <!-- output ==> -->
-                        other stuff here
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="c-hero__image" style="background-image: url('/public/img/_dummy/bg-dummy-1.jpg')">
-            <img src="/public/img/_dummy/bg-dummy-1.jpg"/>
-
-        </div>
-
-
-    </section>
-
-
-    <!-- ********************* -->
-
-
-    <div class="o-section">
-        <div class="o-wrapper">
-            <h2>Hero with video</h2>
-        </div>
     </div>
-
-
-    <!-- video variant -->
-
-    <section class="c-hero">
-
-        <div class="c-hero__body">
-
-            <div class="c-panel-media">
-                <div class="o-wrapper">
-                    <div class="c-panel-media__body  ">
-
-                        <h1 class="c-hero__heading">Title</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
-                            assumenda
-                        </p>
-                        <!-- optional date and author -->
-                        <small class="c-panel-media__details">Date | Author</small>
+</div>
                     </div>
-                </div>
-            </div>
+                    <div class="o-layout__item u-1/3@tablet">
+                        <div class="o-card">
+    <img src="https://placehold.it/750x350" title="An image" />
+    <div class="o-card__body">
+        <p class="o-card__kicker">I'm a "kicker"</p>
+        <h4 class="c-heading--tiny">I'm the title</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, ea fugit incidunt magnam quam quidem. Eaque maiores perferendis suscipit!
+        </p>
+        <p>
+            <a href="#where_to">I'm a card link</a>
+        </p>
 
-            <div class="c-hero__footer">
-                <div class="c-hero__footer-content">
-                    <div>
-                        <!-- output ==> -->
-                        <p>some info here
-                        </p>
+    </div>
+</div>
                     </div>
-                    <div>
-                        <!-- output ==> -->
-                        other stuff here
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="c-hero__video">
-
-            <div class="o-ratio  o-ratio--16:9">
-                <div class="o-ratio__content">
-                    <video loop="" muted="" playsinline="" autoplay=""
-                           src="/public/video/Blurred Crowd of People Walking.mp4"
-                           type="video/mp4"></video>
                 </div>
             </div>
         </div>
@@ -199,75 +102,97 @@ zen/emmet:
 
     <!-- ********************* -->
 
+    <h1>Video version </h1>
 
-    <hr class="u-margin-vertical-huge"/>
+    <section class="c-search">
 
-
-    <div class="o-section">
-        <div class="o-wrapper">
-            <h2>Media Panels</h2>
+        <div class="c-search__bg">
+            <video loop="" muted="" playsinline="" autoplay=""
+                   src="/public/video/Blurred Crowd of People Walking.mp4"
+                   type="video/mp4"></video>
         </div>
+
+        <div class="c-search__body">
+            <div class="o-wrapper">
+
+
+                <div class="c-search__field">
+                    <form action="">
+                        <input class="c-search__input" id="search_fieldX" type="text"
+                               placeholder="Find your adventure at Ramboll"/>
+                        <button class="c-search__btn  c-btn  c-btn--ghost  c-btn--tertiary"> Go</button>
+                        <label class="c-search__label" for="search_fieldX">
+                            Find your adventure at Ramboll</label>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="c-search__cards">
+            <div class="o-wrapper">
+
+                <div class="o-layout  o-layout--padded@mobile">
+                    <div class="o-layout__item u-1/3@tablet">
+                        <div class="o-card">
+                            <div class="o-card">
+    <img src="https://placehold.it/750x350" title="An image" />
+    <div class="o-card__body">
+        <p class="o-card__kicker">I'm a "kicker"</p>
+        <h4 class="c-heading--tiny">I'm the title</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, ea fugit incidunt magnam quam quidem. Eaque maiores perferendis suscipit!
+        </p>
+        <p>
+            <a href="#where_to">I'm a card link</a>
+        </p>
+
     </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="o-layout__item u-1/3@tablet">
+                        <div class="o-card">
+    <img src="https://placehold.it/750x350" title="An image" />
+    <div class="o-card__body">
+        <p class="o-card__kicker">I'm a "kicker"</p>
+        <h4 class="c-heading--tiny">I'm the title</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, ea fugit incidunt magnam quam quidem. Eaque maiores perferendis suscipit!
+        </p>
+        <p>
+            <a href="#where_to">I'm a card link</a>
+        </p>
 
-    <div class="c-panel-media  o-section">
+    </div>
+</div>
+                    </div>
+                    <div class="o-layout__item u-1/3@tablet">
+                        <div class="o-card">
+    <img src="https://placehold.it/750x350" title="An image" />
+    <div class="o-card__body">
+        <p class="o-card__kicker">I'm a "kicker"</p>
+        <h4 class="c-heading--tiny">I'm the title</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, ea fugit incidunt magnam quam quidem. Eaque maiores perferendis suscipit!
+        </p>
+        <p>
+            <a href="#where_to">I'm a card link</a>
+        </p>
 
-        <div class="c-panel-media__bg" style="background-image: url('/public/img/_dummy/bg-dummy-1.jpg');">
-            <!--<img src="/public/img/_dummy/bg-dummy-1.jpg" />-->
-        </div>
-
-        <div class="o-wrapper">
-            <div class="c-panel-media__body  u-text-white">
-
-                <h2>Title</h2>
-                <p class="u-h4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
-                    assumenda
-                    consequatur, dolor ducimus explicabo facere hic impedit magnam, natus nesciunt omnis quaerat quasi
-                    rem
-                    repudiandae similique vero voluptates.
-                </p>
-                <!-- optional date and author -->
-                <p class="c-panel-media__details">Date | Author</p>
+    </div>
+</div>
+                    </div>
+                </div>
             </div>
         </div>
 
 
-    </div>
+    </section>
 
-    <div class="c-panel-media c-panel-media--th-blue  o-section">
-        <div class="o-wrapper">
-            <div class="c-panel-media__body">
 
-                <h2>Title</h2>
-                <p class="XXu-h4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
-                    assumenda
-                    consequatur, dolor ducimus explicabo facere hic impedit magnam, natus nesciunt omnis quaerat quasi
-                    rem
-                    repudiandae similique vero voluptates.
-                </p>
-                <!-- optional date and author -->
-                <small class="c-panel-media__details">Date | Author</small>
-            </div>
-        </div>
-    </div>
-
-    <div class="c-panel-media  o-section">
-        <div class="o-wrapper">
-            <div class="c-panel-media__body">
-
-                <h2>RAMBOLL INGENUITY</h2>
-                <p>
-                    bam bam<br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
-                    assumenda
-                </p>
-                <!-- optional date and author -->
-                <small class="c-panel-media__details">Date | Author</small>
-            </div>
-        </div>
-    </div>
-
+    <hr class="u-margin-vertical-huge"
 
 </main>
 
