@@ -6,11 +6,6 @@
 
 
 
-.o-grad {
-  @include mix-gradient-layer()
-}
-
-
 .c-search {
 
   position: relative;
@@ -87,7 +82,7 @@
   &:after {
     content: '';
     display: block;
-    @include mix-gradient-layer($color-blue-chill);
+    @include mix-gradient-layer;
   }
 }
 
@@ -192,7 +187,8 @@
 // The magic transition
 
 .c-search__input {
-  &:focus {
+  &:focus,
+  &:not(:placeholder-shown) {
     ~ label {
       font-size: initial;
       left: 0;
@@ -201,15 +197,7 @@
 
     }
   }
-  &:not(:empty) {
-    ~ label {
-      font-size: initial;
-      left: 0;
-      transform: translateY(-200%);
-      color: red;
 
-    }
-  }
 }
 
 
@@ -231,5 +219,12 @@
   color: white;
   @include mix-break($until: tablet) {
     background-color: $color-blue-chill;
+  }
+
+  // overwrite
+  .o-card {
+    background-color: rgba(white,0.9);
+    color: initial;
+    border-radius: $global-radius;
   }
 }
