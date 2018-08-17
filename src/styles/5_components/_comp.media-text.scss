@@ -1,4 +1,10 @@
+/*
+  media text component
+  on mobile bps are text and media stacked
+*/
+
 $splitPadding: $spacing-unit / 2;
+
 @mixin leftElement(){
   order: 1;
   padding-left: 0;
@@ -29,18 +35,22 @@ $splitPadding: $spacing-unit / 2;
   }
 }
 
-.c-media-text__media {
+
+.c-media-text__content {
   order: 1;
   margin-bottom: $spacing-unit;
 
   @include mix-break(tablet) {
     @include leftElement;
+
+
     margin-bottom: 0;
+
   }
 }
 
-.c-media-text__content {
 
+.c-media-text__media {
   order: 2;
 
   @include mix-break(tablet) {
@@ -53,18 +63,63 @@ $splitPadding: $spacing-unit / 2;
 */
 
 // REVERSE
-// applies only on horizontal display (tablet +)
+// applies only on horizontal display (tablet up)
 
 .c-media-text--reverse {
 
+  .c-media-text__media {
+    order: 1;
+    margin-bottom: $spacing-unit;
+  }
+    .c-media-text__content {
+    order: 2;
+  }
+
   @include mix-break(tablet) {
 
-    .c-media-text__media {
+    .c-media-text__content {
       @include rightElement;
     }
-    .c-media-text__content {
+    .c-media-text__media {
       @include leftElement;
+      margin-bottom:0;
     }
   }
 
+}
+
+// VERTICAL
+// => from tablet up
+.c-media-text--vertical {
+
+  flex-direction: column;
+  @include mix-center-column;
+  display: flex; // override block prop in mixin mix center column
+
+  >[class*="c-media-text__"] {
+    width: 100%;
+    padding: 0;
+
+    &:nth-of-type(1) {
+    //  background-color: red;
+      margin-bottom: $spacing-unit;
+
+    }
+
+    //&:nth-of-type(2) {
+    //  background-color: yellow;
+    //}
+
+  }
+
+}
+
+.c-media-text--vertical.c-media-text--reverse {
+
+  .c-media-text__content {
+    margin-bottom: 0;
+  }
+  .c-media-text__media {
+    margin-bottom: $spacing-unit;
+  }
 }

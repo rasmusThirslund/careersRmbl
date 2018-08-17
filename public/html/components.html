@@ -108,28 +108,90 @@ zen/emmet:
                 A .c-media-text css component inside some wrapper and layout (grid).
             </p>
             <p>
-                Variation: reverse
+                Variations: reverse, vertical, vertical + reverse
+
             </p>
         </div>
     </div>
 </div>
 
 <!-- the component  -->
+
 <!-- variation:
 add c-media-text--reverse to the c-media-text element
+or c-media-text--vertical, or both
 -->
+
 <div class="o-section">
     <div class="o-wrapper">
         <div class="c-media-text">
-            <div class="c-media-text__media">
-                <%= require('html-loader!./views/comp.media.html') %>
-            </div>
             <div class="c-media-text__content">
                 <%= require('html-loader!./views/comp.richtext.html') %>
+            </div>
+            <div class="c-media-text__media">
+                <%= require('html-loader!./views/comp.media.html') %>
             </div>
         </div>
     </div>
 </div>
+
+<hr class="u-margin-vertical-huge"/>
+
+<p>--reverse</p>
+
+<div class="o-section">
+    <div class="o-wrapper">
+        <div class="c-media-text  c-media-text--reverse">
+            <div class="c-media-text__content">
+                <%= require('html-loader!./views/comp.richtext.html') %>
+            </div>
+            <div class="c-media-text__media">
+                <%= require('html-loader!./views/comp.media.html') %>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<hr class="u-margin-vertical-huge"/>
+
+<p>--vertical</p>
+
+<div class="o-section">
+    <div class="o-wrapper">
+        <div class="c-media-text  c-media-text--vertical">
+            <div class="c-media-text__content">
+                <%= require('html-loader!./views/comp.richtext.html') %>
+            </div>
+            <div class="c-media-text__media">
+                <%= require('html-loader!./views/comp.media.html') %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="u-margin-vertical-huge"/>
+
+
+<p>both vertical and reversed </p>
+
+<div class="o-section">
+    <div class="o-wrapper">
+        <div class="c-media-text  c-media-text--vertical  c-media-text--reverse">
+            <div class="c-media-text__content">
+                <%= require('html-loader!./views/comp.richtext.html') %>
+            </div>
+            <div class="c-media-text__media">
+                <%= require('html-loader!./views/comp.media.html') %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end text media comp ->
+
+<!-- ****************** -->
 
 
 <hr class="u-margin-vertical-huge"/>
@@ -154,6 +216,8 @@ add c-media-text--reverse to the c-media-text element
         </div>
     </div>
 </div>
+
+
 
 
 <hr class="u-margin-vertical-huge"/>

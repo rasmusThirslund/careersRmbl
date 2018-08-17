@@ -26,3 +26,10 @@ Extensions for the inuit type layout system
     }
   }
 }
+
+
+.o-layout--padded {
+    > .o-layout__item {
+      margin-bottom: $spacing-unit;
+    }
+}

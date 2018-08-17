@@ -34,6 +34,15 @@ module.exports = {
             filename: 'frontpage-search.html',
             template: Path.resolve(__dirname, PATH_HTML + '/frontpage-search.html')
         }),
+        new HtmlWebpackPlugin({
+            filename: 'searchpage.html',
+            template: Path.resolve(__dirname, PATH_HTML + '/searchpage.html')
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'demo-page-content-left-menu.html',
+            template: Path.resolve(__dirname, PATH_HTML + '/demo-page-content-left-menu.html')
+        }),
+
 
     ]
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page components</title>
+    <title>HERO ex</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--<link type="text/css" rel="stylesheet" href="/styles/bundle.css"> -->
@@ -36,10 +36,15 @@ zen/emmet:
 
     <!-- hero needs no o-section -->
 
-    <section class="c-hero">
-        <!-- todo: rename c-panel-media to something panel cta quote -->
+    <!--
+        HERO
+        STACKED,
+        blue solid behind text,
+        IMAGE
+    -->
 
-        <!-- use this to make textbackbround solid blue "c-hero__body--solid" -->
+    <section class="c-hero">
+
         <div class="c-hero__body">
 
             <div class="c-panel-media">
@@ -89,6 +94,11 @@ zen/emmet:
 
 
     <!-- ********************* -->
+
+    <!-- HERO,
+        LAYERED,
+        IMAGE
+        -->
 
     <section class="c-hero  c-hero--layers">
 
@@ -146,6 +156,13 @@ zen/emmet:
 
     <!-- video variant -->
 
+    <!--
+        HERO
+        STACKED,
+        VIDEO, w DEFAULT display
+        Natural 100% video full width, but max-h
+    -->
+
     <section class="c-hero">
 
         <div class="c-hero__body">
@@ -181,8 +198,68 @@ zen/emmet:
 
         </div>
 
+        <!-- DFAULT Version of video in hero with constrained width on video -->
         <div class="c-hero__video">
+            <!-- todo: video as iframe? -->
+            <!-- use VIDEO as direct child -->
+                    <video loop="" muted="" playsinline="" autoplay=""
+                           src="/public/video/Blurred Crowd of People Walking.mp4"
+                           type="video/mp4"></video>
+        </div>
 
+
+    </section>
+
+
+
+    <!-- ********************* -->
+
+    <!--
+        HERO
+        VIDEO
+        STACKED,
+        Constrained video WIDTH
+    -->
+
+    <section class="c-hero">
+
+        <div class="c-hero__body">
+
+            <div class="c-panel-media">
+                <div class="o-wrapper">
+                    <div class="c-panel-media__body  ">
+
+                        <h1 class="c-hero__heading">Title</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
+                            assumenda
+                        </p>
+                        <!-- optional date and author -->
+                        <small class="c-panel-media__details">Date | Author</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-hero__footer">
+                <div class="c-hero__footer-content">
+                    <div>
+                        <!-- output ==> -->
+                        <p>some info here
+                        </p>
+                    </div>
+                    <div>
+                        <!-- output ==> -->
+                        other stuff here
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Version of video in hero with constrained width on video -->
+        <div class="c-hero__video  c-hero__video--maxw">
+
+            <!-- use the o-ratio classes here when maxw is on -->
             <div class="o-ratio  o-ratio--16:9">
                 <div class="o-ratio__content">
                     <video loop="" muted="" playsinline="" autoplay=""
@@ -197,6 +274,63 @@ zen/emmet:
 
 
     <!-- ********************* -->
+
+    <!--
+        HERO
+        VIDEO
+        LAYERED !!! ,
+
+    -->
+
+    <section class="c-hero  c-hero--layers">
+
+        <div class="c-hero__body">
+
+            <div class="c-panel-media">
+                <div class="o-wrapper">
+                    <div class="c-panel-media__body  ">
+
+                        <h1 class="c-hero__heading">Title</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur
+                            assumenda
+                        </p>
+                        <!-- optional date and author -->
+                        <small class="c-panel-media__details">Date | Author</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-hero__footer">
+                <div class="c-hero__footer-content">
+                    <div>
+                        <!-- output ==> -->
+                        <p>some info here
+                        </p>
+                    </div>
+                    <div>
+                        <!-- output ==> -->
+                        other stuff here
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Version of video in hero with constrained width on video -->
+        <div class="c-hero__video">
+
+                    <video loop="" muted="" playsinline="" autoplay=""
+                           src="/public/video/Blurred Crowd of People Walking.mp4"
+                           type="video/mp4"></video>
+        </div>
+
+
+    </section>
+
+
+    <!-- ********************* -->
+
 
 
     <hr class="u-margin-vertical-huge"/>

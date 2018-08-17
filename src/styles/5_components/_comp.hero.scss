@@ -43,7 +43,6 @@
   p, h1, h2 {
     @include mix-fade-in;
   }
-
 }
 
 .c-hero__heading {
@@ -51,18 +50,57 @@
 }
 
 .c-hero__video {
+  position: relative;
   overflow: hidden;
   transition: $global-transition;
+  max-height: 70vh;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+
+
+  // default display video, direct child inside __video, => display as full width video,
+  // but set a max height relative to viewport height
+
+  > video {
+
+    @include mix-fade-in;
+    @include mix-place-center();
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+.c-hero__video--maxw {
   max-width: 1300px;
   @include mix-center-block;
 
   @include mix-break(wide) {
     margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  // override prev props
+
+  max-height: none;
+
+  &:before {
+    display: none;
   }
 }
+
+
 /**
 alternative more spacious props:
-ditch the o-ratio element and have just structure lige this
+ditch the o-ratio element and have just structure like this
 <c-hero__video>
   <video/>
 </c-hero__video>
