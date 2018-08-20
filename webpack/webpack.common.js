@@ -30,7 +30,8 @@ module.exports = merge(subpages, {
         new HtmlWebpackPlugin({
             template: Path.resolve(__dirname, PATH_SRC + '/index.html')
         }),
-        // new HtmlWebpackPlugin({
+
+// new HtmlWebpackPlugin({
         //     filename: 'components.html',
         //     template: Path.resolve(__dirname, PATH_HTML + '/components.html')
         // }),

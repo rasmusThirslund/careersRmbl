@@ -91,9 +91,11 @@ $inuit-global-line-height: $base-line-height-px;
 @import "../../node_modules/inuitcss/tools/tools.clearfix";
 @import "../../node_modules/inuitcss/tools/tools.hidden";
 
+
+@import "1_tools/tools.breakpoint";
 // for DEV only: this will enable that breakpoints are shown while developing
 // comment out if not needed =>
-$mq-show-breakpoints: (mobile,tablet,desktop, wide);
+$mq-show-breakpoints: (mobile, paddedContent, tablet,desktop, wide);
 @import "../../node_modules/sass-mq/mq";
 @import "1_tools/tools.aliases";
 @import "1_tools/tools.mixin.spacings";
@@ -194,7 +196,7 @@ $mq-show-breakpoints: (mobile,tablet,desktop, wide);
 // Only set this to `true` if you are absolutely sure about what you are doing.
 $inuit-offsets: true;
 // change this if needed, is base of grid classes =>
-$inuit-fractions: 1 2 3 4 5 6 !default;
+$inuit-fractions: 1 2 3 4 6 8 !default;
 @import "../../node_modules/inuitcss/utilities/utilities.widths";
 @import "../../node_modules/inuitcss/utilities/utilities.headings";
 @import "../../node_modules/inuitcss/utilities/utilities.spacings";

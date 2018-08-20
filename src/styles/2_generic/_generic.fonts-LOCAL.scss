@@ -1,0 +1,37 @@
+/**
+
+  FONT LOADING WHEN WEBPACK RUNS IN PRODUCTION MODE
+
+*/
+
+@font-face {
+  font-family: 'HCo Gotham Rounded';
+  src:url('../../../public/fonts/gotham/B091DEC0FA8ECB331.woff2') format('woff2'),
+  url('../../../public/fonts/gotham/B091DEC0FA8ECB331.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HCo Gotham Rounded';
+  src:url('../../../public/fonts/gotham/8A3BF724BD34E9110.woff2') format('woff2'),
+  url('../../../public/fonts/gotham/8A3BF724BD34E9110.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HCo Gotham Rounded';
+  src:url('../../../public/fonts/gotham/8F568C51C35302813.woff2') format('woff2'),
+  url('../../../public/fonts/gotham/8F568C51C35302813.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HCo Gotham Rounded';
+  src:url('../../../public/fonts/gotham/FE95703437E135722.woff2') format('woff2'),
+  url('../../../public/fonts/gotham/FE95703437E135722.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}

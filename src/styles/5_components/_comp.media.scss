@@ -1,10 +1,30 @@
 $block: c-media;
-.c-media {
-
-  &__caption {
+.c-media__caption {
     font-size: 0.9em;
     line-height: 1.3;
     color: $color-body-grey;
     margin-top: $spacing-unit-tiny;
+  }
+
+
+
+// variation: when inside a layout-single column => make the media larger and centered
+
+.c-media {
+
+  .o-layout--single & {
+
+    @include mix-break(paddedContent) {
+      width: calc(100vw - 15px); // magic number !
+      max-width: 161.8%;
+      @include mix-place-center(left);
+      position: relative;
+
+      .c-media__caption {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+
+    }
   }
 }

@@ -33,3 +33,18 @@ Extensions for the inuit type layout system
       margin-bottom: $spacing-unit;
     }
 }
+
+
+/**
+  SINGLE COLUMN EXTENSION
+ */
+
+.o-layout--single {
+
+  > .o-layout__item {
+
+    @include mix-center-column;
+
+  }
+
+}

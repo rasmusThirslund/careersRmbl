@@ -93,7 +93,7 @@ $splitPadding: $spacing-unit / 2;
 .c-media-text--vertical {
 
   flex-direction: column;
-  @include mix-center-column;
+  @include mix-center-column; // ($noMax: true);
   display: flex; // override block prop in mixin mix center column
 
   >[class*="c-media-text__"] {

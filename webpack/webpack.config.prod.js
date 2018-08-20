@@ -16,7 +16,8 @@ module.exports = merge(common, {
   },
   plugins: [
     new Webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('production'),
+        SCRIPT_BUILD: true
     }),
     new ExtractTextPlugin({ filename: 'bundle.css' }),
     // compiling mode “scope hoisting”

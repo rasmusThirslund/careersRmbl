@@ -1,0 +1,87 @@
+/**
+
+  BREAKPOINT
+  mq (media query) taken from node_module :
+  @import "../../node_modules/sass-mq/mq";
+  Go to that file for deeper documentation!
+
+  TLDR:
+
+  usage from docs:
+  /// @example scss
+///  .element {
+///    @include mq($from: mobile) {
+///      color: red;
+///    }
+///    @include mq($until: tablet) {
+///      color: blue;
+///    }
+///    @include mq(mobile, tablet) {
+///      color: green;
+///    }
+///    @include mq($from: tablet, $and: '(orientation: landscape)') {
+///      color: teal;
+///    }
+///    @include mq(950px) {
+///      color: hotpink;
+///    }
+///    @include mq(tablet, $media-type: screen) {
+///      color: hotpink;
+///    }
+///    // Advanced use:
+///    $my-breakpoints: (L: 900px, XL: 1200px);
+///    @include mq(L, $breakpoints: $my-breakpoints, $static-breakpoint: L) {
+///      color: hotpink;
+///    }
+///  }
+
+
+  BEWARE
+  in this project mq is renamed in alias to "mix-break", use like
+  @include mix-break(props)
+
+
+  SO, ... most uses:
+
+
+  include mix-break(tablet) { // from tablet up
+
+  include mix-break(tablet, desktop) // between tablet and desktop
+
+  include mix-break($until: desktop) // desktop and down
+
+
+
+
+ */
+
+
+// CUSTOM BREAKPOINT
+//
+// The sweet spot just before the tablet kicks in
+// set as the max-paragraph width (currently 40rem) plus padding (space unit) on both sides
+// usage example is when an image needs to grow bigger as soon theres is space for it!
+//
+// EX: inside content on mobile is 100% width and
+// the content has max-width 40rem,
+// so - when the screen gets big enough we make the image eg 140% width and center it.
+// se the c-media... etc
+
+@function rem-to-px($value) {
+  @if unit($value) == rem {
+    @return $value / 1rem * $base-font-size;
+  } @else {
+    @return $value;
+  }
+}
+
+$ContentAndPaddingMaxWidth:  rem-to-px($paragraph-max-width) + ( $inuit-global-spacing-unit * 2);
+
+$mq-breakpoints: (
+        mobile:  320px,
+        paddedContent: $ContentAndPaddingMaxWidth,
+        tablet:  740px,
+        desktop: 980px,
+        wide:    1300px
+) !default;
+

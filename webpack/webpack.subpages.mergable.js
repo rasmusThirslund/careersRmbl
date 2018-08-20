@@ -42,7 +42,10 @@ module.exports = {
             filename: 'demo-page-content-left-menu.html',
             template: Path.resolve(__dirname, PATH_HTML + '/demo-page-content-left-menu.html')
         }),
-
+        new HtmlWebpackPlugin({
+            filename: 'demo-page-content-page.html',
+            template: Path.resolve(__dirname, PATH_HTML + '/demo-page-content-page.html'),
+        }),
 
     ]
 

@@ -1,6 +1,17 @@
-@mixin mix-center-column {
+
+
+/**  CENTER COLUMN with max width for readability
+
+  added an option to exclude the max-width prop.
+
+ */
+
+
+@mixin mix-center-column($noMax: false) {
   display: block;
   width: 100%;
-  max-width: $paragraph-max-width;
+  @if $noMax == false {
+    max-width: $paragraph-max-width;
+  }
   @include mix-center-block;
 }
